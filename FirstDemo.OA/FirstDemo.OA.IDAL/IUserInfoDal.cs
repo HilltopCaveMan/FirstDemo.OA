@@ -10,7 +10,7 @@ namespace FirstDemo.OA.IDAL
 {
     public interface IUserInfoDal : IBaseDal<UserInfo>
     {
-        //定义自己特定的方法。
+        //定义自己特定的方法
 
     }
 }
