@@ -1,0 +1,67 @@
+﻿@model IEnumerable<FirstDemo.OA.Model.UserInfo>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-widht" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(Model => Model.UName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.UPwd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.SubTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.DelFlag)
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.ModifienOn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.Remark)
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.Sort)
+            </th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.UName)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.UPwd)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.SubTime)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.DelFlag)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.ModifienOn)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Remark)</td>
+            </tr>
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Sort)</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
+
