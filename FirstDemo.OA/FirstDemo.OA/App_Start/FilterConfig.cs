@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using FirstDemo.OA.Models;
+using System.Web;
 using System.Web.Mvc;
 
 namespace FirstDemo.OA
@@ -7,7 +8,8 @@ namespace FirstDemo.OA
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            filters.Add(new HandleErrorAttribute());
+            //filters.Add(new HandleErrorAttribute());
+            filters.Add(new MyExceptionAttribute());
         }
     }
 }
