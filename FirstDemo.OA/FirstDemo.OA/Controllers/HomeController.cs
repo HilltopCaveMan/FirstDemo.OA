@@ -14,5 +14,9 @@ namespace FirstDemo.OA.Controllers
             ViewData["name"] = LoginUser.UName;
             return View();
         }
+        public ActionResult HomePage()
+        {
+            return View();
+        }
     }
 }
